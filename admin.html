@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoilCare Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 SoilCare Admin</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <button class="logout-btn" onclick="adminLogout()">Logout</button>
+    </nav>
+</header>
+
+<h1 class="page-title">Admin Dashboard</h1>
+
+<div class="form-container">
+    <h2>Upload Soil Testing Report</h2>
+
+    <form id="uploadForm">
+
+        <input type="text"
+               id="reportAppointment"
+               placeholder="Enter Appointment ID"
+               required>
+
+        <input type="file"
+               id="reportFile"
+               accept=".pdf"
+               required>
+
+        <button type="submit">Upload PDF Report</button>
+
+    </form>
+</div>
+
+<div class="table-container">
+    <h2>Farmer Appointments</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Appointment ID</th>
+                <th>Farmer</th>
+                <th>Mobile</th>
+                <th>Village</th>
+                <th>Soil Type</th>
+                <th>Crop</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="appointmentTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

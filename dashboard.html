@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 SoilCare</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="appointment.html">Book Appointment</a>
+        <a href="reports.html">Reports</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<h1 class="page-title">
+    Welcome, <span id="farmerName">Farmer</span>!
+</h1>
+
+<section class="dashboard">
+
+    <div class="dashboard-cards">
+
+        <div class="dash-card">
+            <h2>Total Appointments</h2>
+            <p id="totalAppointments">0</p>
+        </div>
+
+        <div class="dash-card">
+            <h2>Pending</h2>
+            <p id="pendingAppointments">0</p>
+        </div>
+
+        <div class="dash-card">
+            <h2>Completed</h2>
+            <p id="completedAppointments">0</p>
+        </div>
+
+        <div class="dash-card">
+            <h2>Reports</h2>
+            <p id="totalReports">0</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div style="text-align:center;">
+
+        <a href="appointment.html" class="page-btn">
+            Book Soil Testing
+        </a>
+
+        <a href="reports.html" class="page-btn">
+            View Soil Reports
+        </a>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

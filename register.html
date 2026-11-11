@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-box">
+
+        <h1>🌱 SoilCare</h1>
+        <h2>Farmer Registration</h2>
+
+        <form id="registerForm">
+
+            <input type="text" id="name"
+                placeholder="Full Name" required>
+
+            <input type="email" id="email"
+                placeholder="Email Address" required>
+
+            <input type="tel" id="phone"
+                placeholder="Mobile Number" required
+                pattern="[0-9]{10}" maxlength="10">
+
+            <input type="text" id="address"
+                placeholder="Village / Address" required>
+
+            <input type="password" id="password"
+                placeholder="Create Password" required>
+
+            <input type="password" id="confirmPassword"
+                placeholder="Confirm Password" required>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p>Already registered?
+            <a href="login.html">Login</a>
+        </p>
+
+        <a href="index.html">Back to Home</a>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

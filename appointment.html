@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 SoilCare</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="reports.html">Reports</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<h1 class="page-title">Soil Testing Appointment</h1>
+
+<div class="form-container">
+
+    <h2>Enter Soil Details</h2>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="farmer"
+            placeholder="Farmer Name" required>
+
+        <input type="tel" id="mobile"
+            placeholder="Mobile Number" required
+            pattern="[0-9]{10}" maxlength="10">
+
+        <input type="text" id="village"
+            placeholder="Village Name" required>
+
+        <input type="text" id="land"
+            placeholder="Land Area (e.g. 2 Acres)" required>
+
+        <select id="soilType" required>
+            <option value="">Select Soil Type</option>
+            <option>Red Soil</option>
+            <option>Black Soil</option>
+            <option>Alluvial Soil</option>
+            <option>Sandy Soil</option>
+            <option>Clay Soil</option>
+            <option>Other</option>
+        </select>
+
+        <input type="text" id="crop"
+            placeholder="Crop Currently Growing / Planned" required>
+
+        <input type="date" id="date" required>
+
+        <textarea id="description"
+            placeholder="Additional Information"></textarea>
+
+        <button type="submit">Submit Appointment</button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

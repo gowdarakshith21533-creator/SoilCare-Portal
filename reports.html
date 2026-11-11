@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Test Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🌱 SoilCare</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="appointment.html">Appointment</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<h1 class="page-title">My Soil Testing Reports</h1>
+
+<div class="table-container">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Report ID</th>
+                <th>Farmer</th>
+                <th>Date</th>
+                <th>Report</th>
+            </tr>
+        </thead>
+
+        <tbody id="reportTable"></tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
